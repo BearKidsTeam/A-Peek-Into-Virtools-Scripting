@@ -1,0 +1,29 @@
+\documentclass[oneside]{book}
+\usepackage[cm]{fullpage}
+\usepackage[UTF8]{ctex}
+\usepackage{graphicx}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\setcounter{chapter}{-1}
+
+\title{Virtools 脚本指南\\ \large 一个面向 Ballance 玩家的介绍}
+\author{Chris Xiong}
+\begin{document}
+\begin{titlepage}
+	\makeatletter
+	\centering
+	\vspace*{3cm}
+	{\huge \@title \par}
+	\vspace{1cm}
+	{\@author}
+	\vfill
+	{本书全部内容皆采用 CC BY-SA 4.0 协议授权。\par}
+	\def\padd#1{\ifnum #1<10 0\fi\the#1}
+	{生成日期：\the\year-\padd\month-\padd\day}
+	\vfill
+\end{titlepage}
+\renewcommand{\contentsname}{目录}
+\tableofcontents
+\input preface.tex
+\input chapter0/chap0.tex
+\end{document}
+
